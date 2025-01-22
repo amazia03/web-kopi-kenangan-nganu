@@ -11,6 +11,9 @@
   border: none;
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "poppins", sans-serif;
   background-color: var(--bg);
@@ -234,7 +237,7 @@ body {
 .contact .row .maps {
   flex: 1 1 45rem;
   width: 100%;
-  opject-fit: cover;
+  object-fit: cover;
 }
 
 .contact .row form {
