@@ -265,8 +265,7 @@ width: 70%;
   );
 } */
 
-.hero .content
-{
+.hero .content{
   padding: 1.4rem 7%;
   /* max-width: 50rem; */
   width: 100%;
@@ -288,7 +287,10 @@ top: 150px;
   mix-blend-mode: difference;
 }
 
-.hero .content p {
+.hero .content p,
+.menu,
+.products
+{
   font-size: 1.6rem;
   margin-top: 1rem;
   line-height: 1.4; /* Dikoreksi dari 1,4 */
@@ -298,7 +300,7 @@ top: 150px;
 }
 
 
-.hero .content .cta {
+.hero .content .cta{
   margin-top: 1rem; /* Dikoreksi dari 1 rem */
   display: inline-block;
   padding: 1rem 3rem;
