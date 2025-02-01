@@ -265,7 +265,8 @@ width: 70%;
   );
 } */
 
-.hero .content {
+.hero .content
+{
   padding: 1.4rem 7%;
   /* max-width: 50rem; */
   width: 100%;
