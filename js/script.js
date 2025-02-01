@@ -38,23 +38,25 @@ document.addEventListener("click", function (e) {
 });
 
 // modalbox
+// Modal Box
 const itemdetailmodal = document.querySelector("#item-detail-modal");
-const itemdetailbuttons = document.querySelectorAll(".item-detail-button");
 
-itemdetailbuttons.forEach((btn) => {
-  btn.onclick = (e) => {
+// Event Delegation untuk Tombol Eye
+document.addEventListener("click", function (e) {
+  // Buka Modal
+  if (e.target.closest(".item-detail-button")) {
     e.preventDefault();
     itemdetailmodal.style.display = "flex";
-  };
+  }
+
+  // Tutup Modal saat klik close icon
+  if (e.target.closest(".close-icon")) {
+    e.preventDefault();
+    itemdetailmodal.style.display = "none";
+  }
 });
 
-// click close tombol modal
-document.querySelector("#item-detail-modal .close-icon").onclick = (e) => {
-  e.preventDefault();
-  itemdetailmodal.style.display = "none";
-};
-
-// klik di luar modal
+// Tutup Modal saat klik di luar
 window.onclick = (e) => {
   if (e.target === itemdetailmodal) {
     itemdetailmodal.style.display = "none";
