@@ -40,6 +40,7 @@ document.addEventListener("click", function (e) {
 // modalbox
 // Modal Box
 const itemdetailmodal = document.querySelector("#item-detail-modal");
+const itemdetailmodal = document.querySelector("#item-detail-moda2");
 
 // Event Delegation untuk Tombol Eye
 document.addEventListener("click", function (e) {
